@@ -2,6 +2,7 @@ import { Button, Card, Input, Layout, List, message } from "antd";
 import { useState } from "react";
 import { getContractNFTs } from "./utils";
 import "./App.css";
+import NftCard from "./conponents/NftCard";
 
 const { Header, Content } = Layout;
 
@@ -64,12 +65,8 @@ function App() {
             xl: 4,
             xxl: 4,
           }}
-          dataSource={[1, 2, 3]}
-          renderItem={(nft) => (
-            <List.Item key={nft}>
-              <Card title={nft} />
-            </List.Item>
-          )}
+          dataSource={nfts}
+          renderItem={(nft) => <NftCard nft={nft} />}
         />
       </Content>
     </Layout>
