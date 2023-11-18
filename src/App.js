@@ -1,4 +1,4 @@
-import { Button, Card, Input, Layout, List, message } from "antd";
+import { Button, Input, Layout, List, message } from "antd";
 import { useState } from "react";
 import { getContractNFTs } from "./utils";
 import "./App.css";
