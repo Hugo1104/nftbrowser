@@ -2,7 +2,7 @@ import { Button, Card, Input, Layout, List, message } from "antd";
 import { useState } from "react";
 import { getContractNFTs } from "./utils";
 import "./App.css";
-import NftCard from "./conponents/NftCard";
+import NftCard from "./components/NftCard";
 
 const { Header, Content } = Layout;
 
